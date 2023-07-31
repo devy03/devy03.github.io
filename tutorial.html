@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>LED Game Tutorial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+	<div style="background-image: url('https://directlinedev.com/media/services/service/background/background_35_2UDIpF7.wide.jpeg);">
+
+
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Quick Links</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://docs.google.com/document/d/13muaQMtbJobjWkj8mRmTe5cDeoHpu_AvKACuWva_F6M/edit?usp=sharing">Materials</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://drive.google.com/file/d/1UFHGCAUKRycEw_leYkpNoHcijWSsh_wz/view?usp=sharing">Videos</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/devarshgandhi05/RandomLEDGame/blob/main/randomledgame1.ino">Project Code</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/devarshgandhi05/RandomLEDGame">Link to GitHub</a>
+</nav>
+
+<!-- black overlay-->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">How to make LED Game yourself? </h1>
+      <p>Click on each component to view its discription...<br>
+				  <a href="https://www.arduino.cc/en/guide/introduction">1 x	Arduino Uno R3</a><br>
+					<a href="https://randomnerdtutorials.com/electronics-basics-how-do-rgb-leds-work/">2 x	RGB LED</a><br> 
+					<a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button">4 x Push Button</a><br> 
+					<a href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors">6 x 220 Ω Resistor</a><br>
+					<a href="http://blog.sparkfuneducation.com/what-is-jumper-wire">20 x Jumper Wire</a>  
+					<p>
+						Alright, lets talk about the components. <br> First thing we have here, is the big brain Arduino Uno. It is a microcomputer that is responsible for all the logic commands of the project. You tell it to turn the lights on, it will do it for you. Obviously its not that easy. First we need to learn all the other components that we are going to be using in this project.
+						<br>
+						 RGB LEDs, RGB stands for Red, Green and Blue and LED stands for Light Emitting Diode. Those light strips you put on your ceiling, its made out of these LEDs. Its sole purpose is to emite 3 colors of lights in different proportion.<br> Next up, we have push buttons. I am sure you have used these many times in your life and know what it does. <br> Last thing we need is a bunch of jumper wire. It works exactly the same as any other wires.
+			
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">
+				 <img style="border:2px solid black; width:100%" src="3.jpeg" alt="physical image">
+			</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Simulation and Code</h1>
+      <p>Dont worry if you are still struck on one component, I promise you will get to know your components better as we make this project. It is really important to learn the function of each component. (Project is like a dish, and components are its spices, you gotta have the spices right to make the dish delicious.) <br>
+			Let's get started now. Open up any simulation software, here I am using <a href="https://www.tinkercad.com">TinkerCAD.</a> It is a great web based simulation, perfect for young engineers. Drag in all the necessary components mentioned above into your workspace. <br>
+			After you have all your components added, take a look at the circuit diagram. Connect the components exactly how its shown in the diagram. (NOTE: Pin Number and Type matters, Position doesn't.) <br> You are more than 40% done, all you need now is to understand the code and upload it. <br><br>
+			<img style="border:2px solid green; width:100%;" src="CodeGit.png" alt="firstlines image"><br>
+			
+			
+			</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img style="border:2px solid black; width:100%;" src="Sim.PNG" alt="firstlines image"></p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Learn Together</h1>
+      <p>xyz</p>
+			<br><br> <img style="border:2px solid black; width:100%" src="proj.gif" alt="physical image">
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img style="border:1px solid black; width:100%" src="GitHub.png" alt="physical image"></p>
+      
+    </div>
+  </div>
+
+  
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
